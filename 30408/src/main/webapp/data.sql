@@ -1,0 +1,8 @@
+CREATE TABLE guestbook (
+    id NUMBER PRIMARY KEY,
+    name VARCHAR2(50) NOT NULL,
+    message CLOB NOT NULL,
+    created_at DATE DEFAULT SYSDATE
+);
+
+CREATE SEQUENCE guestbook_seq START WITH 1 INCREMENT BY 1;
