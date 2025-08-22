@@ -12,53 +12,43 @@ import javax.servlet.http.HttpServletResponse;
  */
 @WebServlet("/ResvDTO")
 public class ResvDTO {
-    private String resvNo;
-    private String custNo;
-    private String resvDate;
-    private String courtNo;
+    private String id;
+    private String name;
+    private String message;
 
     // 기본 생성자
     public ResvDTO() {}
 
     // 전체 필드를 받는 생성자
-    public ResvDTO(String resvNo, String custNo, String resvDate, String courtNo) {
-        this.resvNo = resvNo;
-        this.custNo = custNo;
-        this.resvDate = resvDate;
-        this.courtNo = courtNo;
+    public ResvDTO(String id, String name, String message) {
+        this.id = id;
+        this.name = name;
+        this.message = message;
     }
 
     // Getter / Setter
-    public String getResvNo() {
-        return resvNo;
+    public String getid() {
+        return id;
     }
 
-    public void setResvNo(String resvNo) {
-        this.resvNo = resvNo;
+    public void setid(String id) {
+        this.id = id;
     }
 
-    public String getCustNo() {
-        return custNo;
+    public String getname() {
+        return name;
     }
 
-    public void setCustNo(String custNo) {
-        this.custNo = custNo;
+    public void setname(String name) {
+        this.name = name;
     }
 
-    public String getResvDate() {
-        return resvDate;
+    public String getmessage() {
+        return message;
     }
 
-    public void setResvDate(String resvDate) {
-        this.resvDate = resvDate;
-    }
-
-    public String getCourtNo() {
-        return courtNo;
-    }
-
-    public void setCourtNo(String courtNo) {
-        this.courtNo = courtNo;
+    public void setmessage(String message) {
+        this.message = message;
     }
 }
 

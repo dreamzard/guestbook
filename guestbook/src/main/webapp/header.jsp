@@ -6,10 +6,11 @@
 <meta charset="UTF-8">
 <title>header</title>
 <link rel="stylesheet" href="style.css">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
 </head>
 <body>
-<header>
-		<h2>(과정평가형 정보처리산업기사)배드민턴 코트예약 관리프로그램 ver 2023-01</h2>
+<header class="">
+		<h2>방명록 관리프로그램</h2>
 	</header>
 </body>
 </html>

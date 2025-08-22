@@ -13,14 +13,14 @@ import model.HelloDAO;
 /**
  * Servlet implementation class InsertServlet
  */
-@WebServlet("/insert")
-public class InsertServlet extends HttpServlet {
+@WebServlet("/del")
+public class DelServlet extends HttpServlet {
 	private static final long serialVersionUID = 1L;
     
     /**
      * @see HttpServlet#HttpServlet()
      */
-    public InsertServlet() {
+    public DelServlet() {
         super();
         // TODO Auto-generated constructor stub
     }
@@ -42,15 +42,13 @@ public class InsertServlet extends HttpServlet {
 			throws ServletException, IOException {
 		request.setCharacterEncoding("utf-8");
 		
-		String id = request.getParameter("id");
-		String name = request.getParameter("name");
-		String message = request.getParameter("message");
+		String del_id = request.getParameter("del_id");
 
 //      request.setAttribute("message", name);
 //      request.getRequestDispatcher("result.jsp").forward(request, response);
 
 		HelloDAO dao = new HelloDAO();
-		dao.insertGuestbook(id, name, message);
+		dao.deleteGuestbook(del_id);
 //      dao.insertName(cust_no);
 //      dao.insertName(resv_date);
 //      dao.insertName(court_no);
