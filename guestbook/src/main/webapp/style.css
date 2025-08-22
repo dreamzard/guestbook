@@ -43,8 +43,6 @@ nav, header {
 section {
 	width: 100%;
 	height: calc(100vh - 130px);
-	flex: 1;
-	
 }
 thead{
 	border-radius: 30%;
@@ -53,7 +51,6 @@ thead{
 section h2 {
 	text-align: center;
 	line-height: 50px;
-	
 }
 
 section table {
@@ -99,11 +96,11 @@ footer {
 	text-align: center;
 	line-height: 40px;
 	background-color: #a1c4fd;
-	
 }
 
-/* 전체 배경 그라데이션 */
 
+
+/* 전체 배경 그라데이션 */
 body {
   
   min-height: 100vh;
@@ -120,16 +117,6 @@ body {
   min-height: 100%
 }
 
-/*
-.background {
-	min-height: 100vh;
-	margin: 0;
-	background: linear-gradient(-45deg, #ff9a9e, #fad0c4, #a1c4fd, #c2e9fb);
-	background-size: 400% 400%;
-	animation: gradientMove 12s ease infinite;
-	font-family: 'Noto Sans KR', sans-serif;
-}
-*/
 /* 그라데이션 애니메이션 */
 @keyframes gradientMove {
   0% {
